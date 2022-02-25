@@ -1,3 +1,60 @@
-* {
-    color: rgb(6, 79, 143);
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+a:hover {
+    color: blanchedalmond;
+    animation-name: grow;/*nut this out later*/
+    animation-duration: 1s ease-in-out;
+}
+a:visited {
+    color: rgb(240, 175, 89);
+}
+#navb {
+    width: 100%;
+    background: gray;
+}
+#navb label {
+    display: inline-block;
+    color:blueviolet;
+    background-color: brown;
+    size: 2%;
+
+}
+#hamburger {
+    display: none;
+}
+
+#ingredients a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+}
+#ingredients {
+    display: none;
+}
+#navb input:checked ~ #ingredients {
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .welcome
+    #ingredients {
+        display: flex;
+    }
+    #ingredients a {
+
+    }
+    #hamburger label {
+        display: none;
+    }
+}
+@keyframes grow {
+   0% {font-size: small;}/*nut this out later*/
+   100% {font-size: large;}
 }
