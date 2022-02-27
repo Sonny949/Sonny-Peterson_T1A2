@@ -1,7 +1,23 @@
+:root {
+    --
+}
+
+* {
+    background-color: gray;
+}
+h1 {
+    padding-left: 10px;
+}
 a {
     text-decoration: none;
     color: aquamarine;
 }
+
+h6 {
+    font-weight: normal;
+    position: fixed;
+}
+
 a:hover {
     color: blanchedalmond;
     animation-name: grow;/*nut this out later*/
@@ -44,31 +60,26 @@ a:visited {
     }
     h1 {
         display: flex;
+        justify-content: center;
         width: 70%;
         order: 2;
     }
 
     .links {
         display: flex;
-        width: 15%;
+        width: 120px;
         order: 1;
-    }
-     
-    #ingredients {
-        display: inline-flex;
-        align-items: space-evenly;
-        margin: auto;
-        
-        
-    }
+    }   
 
-    #ingredients a {
+    #ingredients {
         display: flex;        
         justify-content: space-evenly;
+        flex-flow: column wrap;
     }
 
     #navb {
-        display: inline;
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         width: 30%;
         order: 3;
