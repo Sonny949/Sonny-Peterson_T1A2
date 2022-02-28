@@ -3,15 +3,21 @@
 }
 h1 {
     padding-left: 10px;
-    order: 0:
+    
 }
+
+.click {
+overflow: auto;
+}
+
 a {
     text-decoration: none;
     color: aquamarine;
 }
 
 .links {
-    order:2
+    float: left;
+    align-self: top;
 }
 
 h6 {
@@ -28,15 +34,14 @@ a:visited {
     color: rgb(240, 175, 89);
 }
 #navb {
-    width: 100%;
+   float: right;
  
 }
 #navb label {
     display: inline-block;
     color:rgb(150, 5, 142);
     background-color: brown;
-    size: 5%;
-    order: 2;
+    float: right;
 
 }
 #hamburger {
@@ -48,6 +53,7 @@ a:visited {
     width: 100%;
     box-sizing: border-box;
     border-top: 1px solid white;
+    font-size: small;
 }
 #ingredients {
     display: none;
