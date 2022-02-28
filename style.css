@@ -1,99 +1,35 @@
-* {
-   background: gray; 
-}
-
-
-a {
-    text-decoration: none;
-    color: aquamarine;
-}
-
-
-h6 {
-    font-weight: normal;
-}
-
-header {
-    background-image: url("/images/moontin.jpeg");
-    background-size: cover;
-}
-
-a:hover {
-    color: blanchedalmond;
-    animation-name: grow;/*nut this out later*/
-    animation-duration: 1s ease-in-out;
-}
-a:visited {
-    color: rgb(240, 175, 89);
-}
-#navb {
-   float: right;
- 
-}
-#navb label {
-    display: inline-block;
-    color:rgb(150, 5, 142);
-    background-color: brown;
-    float: right;
-
-}
-#hamburger {
-    display: none;
-}
-
-#ingredients a {
-    display: block;
-    width: 100%;
+*{
     box-sizing: border-box;
-    border: 1px solid white;
-    font-size: small;
 }
-#ingredients {
-    display: none;
-}
-#navb input:checked ~ #ingredients {
-    display: block;
-}
-@media only screen and (min-width: 600px) {
-    header {
-        display: block;
-        flex-direction: row;
-    }
-    h1 {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        order: 2;
-    }
 
-    #media {
-        vertical-align: top;
-    }
+main {
+    display: flex;
+    /*overflow for phone*/
 
-    #ingredients {
-        display: flex;
-        flex-grow: 1;
-        flex-basis: 0;       
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-
-    #navb {
-        width: 30%;
-        order: 3;
-    }
-
-    #ingredients a {
-        padding: auto;
-        direction: inline;
-        width: auto;  
-        border: none;
-        font-size: 1.4vw;     
-    }
-    #navb label, #hamburger { display: none; } 
 }
-@keyframes grow {
-   0% {font-size: small;}/*nut this out later*/
-   100% {font-size: large;}
+
+#media {
+    display: flex;
+    padding: 0.2rem;
+    height: 20px;
+    margin: 0%;
+    
 }
+
+.column {
+    flex: 1;
+    padding: 1rem;
+}
+
+#linkd, #github {
+    height: 1.6rem;    
+}
+
+#linkd {
+    padding-left: 30px;    
+}
+
+#github {
+    padding-right: 30px;
+}
+
