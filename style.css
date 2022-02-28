@@ -1,28 +1,21 @@
 * {
-    background-color: gray;
-}
-h1 {
-    padding-left: 10px;
-    
+   background: gray; 
 }
 
-.click {
-overflow: auto;
-}
 
 a {
     text-decoration: none;
     color: aquamarine;
 }
 
-.links {
-    float: left;
-    align-self: top;
-}
 
 h6 {
     font-weight: normal;
-    position: fixed;
+}
+
+header {
+    background-image: url("/images/moontin.jpeg");
+    background-size: cover;
 }
 
 a:hover {
@@ -52,7 +45,7 @@ a:visited {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    border-top: 1px solid white;
+    border: 1px solid white;
     font-size: small;
 }
 #ingredients {
@@ -63,27 +56,24 @@ a:visited {
 }
 @media only screen and (min-width: 600px) {
     header {
-        display: flex;
+        display: block;
         flex-direction: row;
     }
     h1 {
         display: flex;
         justify-content: center;
-        width: 70%;
+        width: 50%;
         order: 2;
     }
 
-    .links {
-        display: flex;
-        width: 120px;
-        order: 1;
-    }   
+    #media {
+        vertical-align: top;
+    }
 
     #ingredients {
         display: flex;
         flex-grow: 1;
-        flex-basis: 0;
-        padding: 30px, 30px, 30px, 30px;        
+        flex-basis: 0;       
         justify-content: space-between;
         align-items: center;
         
@@ -98,8 +88,8 @@ a:visited {
         padding: auto;
         direction: inline;
         width: auto;  
-        border-top: none;
-        font-size: 1.2vw;      
+        border: none;
+        font-size: 1.4vw;     
     }
     #navb label, #hamburger { display: none; } 
 }
