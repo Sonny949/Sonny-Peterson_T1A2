@@ -16,9 +16,9 @@ body {
     align-items: center;
     font-family: ;
     color: rgb(240, 237, 198);
-    width: 99vw;
+    width: 100vw;
     height: 80vh;
-    background: url(/images/moontin.jpeg);
+    background: url(/images/Optimized-moontin2.jpg);
     background-size: cover;
     /*overflow for phone*/
 }
