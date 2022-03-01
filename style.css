@@ -15,12 +15,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: ;
-    color: rgb(240, 237, 198);
-    width: 100vw;
+    color: rgb(236, 232, 168);
     height: 80vh;
     background: url(/images/Optimized-moontin2.jpg);
     background-size: cover;
-    /*overflow for phone*/
 }
 
 #title h1 {
@@ -36,7 +34,6 @@ body {
 .giblets {
     background-color: gray;
     display: flex;
-    width: 100vw;
 }
 
 .giblets ul {
@@ -57,11 +54,10 @@ body {
 .giblets ul li a {
     text-decoration: none;
     color: aquamarine;
-    font
 }
 
 .giblets ul li a:visited {
-    color: rgb(75, 218, 147)
+    color: rgb(64, 202, 133)
 }
 
 
@@ -70,12 +66,26 @@ body {
 }
 
 .pic-menu {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: gray;
+    margin: 0;
+    padding: 0;
 }
 
 .pic-menu img {
-    width: 100vw;
+    width: 99.8vw;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: auto;
 }
 
 #linkd, #github {
@@ -94,18 +104,35 @@ h5 {
     display: none;
 }
 
-footer {
-    background-color: gray;
+figcaption {
+    font-size: small;
 }
 
+footer {
+    background-color: gray;
+   
+}
+
+@media (min-width: 550px) and (max-width: 749px) {
+    .giblets ul {
+        margin-left: auto;
+    }
+}
 
 @media only screen and (min-width: 750px) {
-    .giblets {
-        
+
+    body {
+        height: 100vh;
+    }
+
+    #container {
+        background-color: gray;
+        position: relative;
+        min-height: 100vh;
     }
 
     .giblets ul {
-        margin-left: auto;
+        margin-left: auto; */
         font-size: small;
         align-items: center;     
     }
@@ -142,7 +169,28 @@ footer {
         height: 50vh;
     }
 
-    .pic-menu img {
-        width: auto;
+    .pic-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        flex-wrap: wrap;
+        padding-bottom: 2.5rem;
     }
+
+    .pic-menu img {
+        width: 170px;
+    }
+    
+    figure {
+        padding-top: 30px;
+    }
+    
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
 }
