@@ -4,17 +4,50 @@
 
 main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /*overflow for phone*/
-
 }
 
 #media {
-    display: flex;
     padding: 0.2rem;
     height: 20px;
-    margin: 0%;
+    margin: 0%;    
+}
+
+.giblets {
+    background-color: gray;
+    display: flex;
+}
+
+.giblets ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.giblets ul li {
+    padding: 0 1rem;
     
 }
+
+.giblets ul li a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.giblets ul li a:visited {
+    color: rgb(75, 218, 147)
+}
+
+
+.giblets ul li a:hover {
+    color: rgb(245, 199, 130);
+}
+
 
 .column {
     flex: 1;
@@ -22,14 +55,52 @@ main {
 }
 
 #linkd, #github {
-    height: 1.6rem;    
+    height: 2rem;
+    mix-blend-mode: multiply;
+    padding: 5px;
 }
 
-#linkd {
-    padding-left: 30px;    
+.icons {
+    display: flex;
+    justify-content: center;
 }
 
-#github {
-    padding-right: 30px;
+h5 {
+    display: none;
 }
 
+
+@media only screen and (min-width: 750px) {
+    .giblets {
+        
+    }
+
+    .giblets ul {
+        margin-left: auto;
+        font-size: small;
+        align-items: center;     
+    }
+
+    h5 {
+        display: flex;
+        float: left;
+        align-self: center;
+        justify-self: center;
+        font-weight: normal;
+    }
+
+    #linkd {
+        padding-left: 25px;   
+        
+    }
+    
+    #github {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+    }
+}
