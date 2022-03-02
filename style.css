@@ -118,7 +118,7 @@ figcaption {
     font-size: medium;
     text-align: center;
     font-family: var(--maintext);
-    color: var(--title-color)
+    color: var(--title-color);
 }
 
 footer {
@@ -271,6 +271,7 @@ footer {
 
     figcaption {
         font-size: small;
+        font-family: var(--titletext);
     }
     
     #footer {
