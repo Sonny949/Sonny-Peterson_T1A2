@@ -1,4 +1,13 @@
-*{
+:root {
+    --nav-colour: aquamarine;
+    --nav-visit: rgb(64, 202, 133);
+    --nav-hover: rgb(245, 199, 130);
+    --back: gray;
+    --title-color: rgb(236, 232, 168); 
+    --maintext: 'Playfair Display', serif;
+    --titletext:'Amatic SC', cursive;
+}
+* {
     box-sizing: border-box;
 
 }
@@ -14,16 +23,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: ;
+    font-family: var(--titletext);
     color: rgb(236, 232, 168);
     height: 80vh;
     background: url(/images/Optimized-moontin2.jpg);
     background-size: cover;
 }
 
-#title h1 {
-    
-}
 
 #media {
     padding: 0.2rem;
@@ -32,7 +38,7 @@ body {
 }
 
 .giblets {
-    background-color: gray;
+    background-color: var(--back);
     display: flex;
 }
 
@@ -41,7 +47,7 @@ body {
     flex-wrap: wrap;
     font-size: 13px;
     list-style: none;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--maintext);
     font-size: 1.2rem;
     padding-left: 0%;
 }
@@ -53,16 +59,16 @@ body {
 
 .giblets ul li a {
     text-decoration: none;
-    color: aquamarine;
+    color: var(--nav-colour);
 }
 
 .giblets ul li a:visited {
-    color: rgb(64, 202, 133)
+    color: var(--nav-visit)
 }
 
 
 .giblets ul li a:hover {
-    color: rgb(245, 199, 130);
+    color: var(--nav-hover);
 }
 
 .pic-menu {
@@ -70,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: gray;
+    background-color: var(--back);
     margin: 0;
     padding: 0;
 }
@@ -102,21 +108,46 @@ figure {
 
 h5 {
     display: none;
+    color: var(--nav-colour);
+    font-family: var(--maintext);
 }
 
 figcaption {
-    font-size: small;
+    font-size: medium;
+    text-align: center;
+    font-family: var(--maintext);
+    color: var(--title-color)
 }
 
 footer {
-    background-color: gray;
+    background-color: var(--back);
+    font-size: x-small;
+    color: var(--nav-colour);
+    font-family: var(--maintext);
    
 }
 
-@media (min-width: 550px) and (max-width: 749px) {
+@media (min-width: 550px) and (max-width: 750px) {
     .giblets ul {
-        margin-left: auto;
+        margin-left: auto; 
+        font-size: 1.2rem;
+        align-items: center;  
     }
+
+    .pic-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+     .pic-menu img { 
+        display: flex;
+        width: 48vw;
+
+    } 
 }
 
 @media only screen and (min-width: 750px) {
@@ -126,13 +157,13 @@ footer {
     }
 
     #container {
-        background-color: gray;
+        background-color: var(--back);
         position: relative;
         min-height: 100vh;
     }
 
     .giblets ul {
-        margin-left: auto; */
+        margin-left: auto; 
         font-size: small;
         align-items: center;     
     }
@@ -186,11 +217,15 @@ footer {
     figure {
         padding-top: 30px;
     }
+
+    figcaption {
+        font-size: small;
+    }
     
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
+    height: 2.5rem;          
   }
 }
