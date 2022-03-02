@@ -117,7 +117,7 @@ h5 {
 figcaption {
     font-size: medium;
     text-align: center;
-    font-family: var(--maintext);
+    font-family: var(--titletext);
     color: var(--title-color);
 }
 
@@ -247,7 +247,9 @@ footer {
     }
 
     .title {
-        height: 50vh;
+        height: 60vh;
+        display: flex;
+        font-size: 1.2rem;
         font-weight: bolder;
     }
 
@@ -270,7 +272,7 @@ footer {
     }
 
     figcaption {
-        font-size: small;
+        font-size: 1.1rem;
         font-family: var(--titletext);
     }
     
