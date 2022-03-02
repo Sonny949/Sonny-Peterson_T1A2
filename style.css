@@ -1,5 +1,6 @@
 :root {
     --nav-colour: aquamarine;
+    --p-colour: rgb(194, 59, 10);
     --nav-visit: rgb(64, 202, 133);
     --nav-hover: rgb(245, 199, 130);
     --back: gray;
@@ -136,20 +137,28 @@ footer {
 
 .contact img {
     display: flex;
-    width: 300px;
-    height: 199px;
-
+    width: 100%;
+    height: auto;
 }
 
 #context h1 {
     font-family: var(--titletext);
     color: rgb(216, 2, 187);
+    font-size: 2.5rem;
+}
+
+#context p {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--maintext);
+    color: var(--p-colour);
+    font-size: 1.2rem;
 }
 
 @media (min-width: 500px) and (max-width: 750px) {
+
     .giblets ul {
         margin-left: auto; 
-        font-size: 1.2rem;
         align-items: center;  
     }
 
@@ -166,6 +175,17 @@ footer {
         width: 48vw;
 
     } 
+
+    .contact {
+        min-height: 100vh;
+    }
+
+    .contact img {
+        display: flex;
+        width: 500px;
+        height: 300px;
+        padding-top: 20px;
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -216,6 +236,7 @@ footer {
 
     .title {
         height: 50vh;
+        font-weight: bolder;
     }
 
     .pic-menu {
@@ -257,5 +278,8 @@ footer {
 
     .contact img {
         padding-right: 40px;
+        display: flex;
+        width: 300px;
+        height: 199px;
     }
 }
