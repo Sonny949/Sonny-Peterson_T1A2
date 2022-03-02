@@ -111,6 +111,7 @@ h5 {
     display: none;
     color: var(--nav-colour);
     font-family: var(--maintext);
+    padding-left: 10px;
 }
 
 figcaption {
@@ -141,19 +142,20 @@ footer {
     height: auto;
 }
 
-#context h1 {
+.context h1 {
     font-family: var(--titletext);
     color: rgb(216, 2, 187);
     font-size: 2.5rem;
 }
 
-#context p {
+.context p {
     display: flex;
     flex-wrap: wrap;
     font-family: var(--maintext);
     color: var(--p-colour);
     font-size: 1.2rem;
 }
+
 
 @media (min-width: 500px) and (max-width: 750px) {
 
@@ -185,6 +187,16 @@ footer {
         width: 500px;
         height: 300px;
         padding-top: 20px;
+    }
+
+    .context p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #notme {
+        width: 300px;
+        height: 550px;
     }
 }
 
@@ -281,5 +293,10 @@ footer {
         display: flex;
         width: 300px;
         height: 199px;
+    }
+
+    #notme {
+        width: 400px;
+        height: 600px;
     }
 }
