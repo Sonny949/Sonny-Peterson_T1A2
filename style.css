@@ -107,6 +107,14 @@ figure {
     justify-content: center;
 }
 
+#about p {
+    color:rgb(187, 207, 3);
+}
+
+#about h1 {
+    color:rgb(57, 168, 67)
+}
+
 h5 {
     display: none;
     color: var(--nav-colour);
@@ -156,6 +164,10 @@ footer {
     font-size: 1.2rem;
 }
 
+#cap {
+    color: var(--title-color);
+    font-family: var(--titletext);
+}
 
 @media (min-width: 500px) and (max-width: 750px) {
 
@@ -194,9 +206,16 @@ footer {
         flex-wrap: wrap;
     }
 
-    #notme {
+    #about-img img {
         width: 300px;
-        height: 550px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #fam img {
+        width: 500px;
+        height: auto;
     }
 }
 
@@ -224,6 +243,7 @@ footer {
         align-self: center;
         justify-self: center;
         font-weight: normal;
+        margin-top: 15px;
     }
 
     #linkd, #github {
@@ -298,8 +318,38 @@ footer {
         height: 199px;
     }
 
-    #notme {
-        width: 400px;
-        height: 600px;
+    #about-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    #about-img img {
+        width: 300px;
+        height: auto;
+    }
+
+    #fam img {
+        width: 500px;
+        height: auto;
+    }
+
+    #cap {
+        display: flex;
+        text-align: justify;
+        width: 500px;
+    }
+
+    #about-img figure figcaption {
+        display: flex;
+        justify-self: flex-start;
+        align-self: justify;
+        width: 260px;
+    }
+
+    #cap {
+        width: 260px;
+        justify-content: center;
+        
     }
 }
