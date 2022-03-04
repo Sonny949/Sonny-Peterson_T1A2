@@ -213,10 +213,47 @@ footer {
 .blog-nav ul li h3 {
     padding: 0 20px 5px 5px;
     color: rgb(42, 43, 124);
+}
 
+#workh {
+    font-family: var(--titletext);
+    color:rgb(46, 22, 90);
+    text-align: center;
+}
+
+#works img {
+    display: flex;
+    width: 95vw;
+    height: auto;
+    margin: auto;
+}
+
+.workp p {
+    font-family: var(--maintext);
+    color: rgb(122, 10, 16);
+    margin-left: 5px;
+}
+
+.workp a {
+    text-decoration: none;
+    color: var(--nav-colour);
 }
 
 
+.workp a:visited {
+    color: var(--nav-visit)
+}
+
+.workp a:hover {
+    color: var(--nav-hover);
+}
+
+#bottom figure a img {
+    display: flex;
+    width: 95vw;
+    max-width: 350px;
+    margin: auto;
+}
 
 @media (min-width: 500px) and (max-width: 750px) {
 
@@ -281,6 +318,16 @@ footer {
         max-height: 60%;
         margin: auto;
     }  
+
+    #works img {
+        width: 400px;
+        height: auto;
+    }
+
+    #bottom figure a img {
+        width: 300px;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -439,4 +486,17 @@ footer {
         width: 300px;
         margin: auto;
     }
-}
+
+    #works img {
+        float: left;
+        width: 500px;
+        height: auto;
+        margin: 10px        
+    }
+
+    .workp p {
+        padding: 0 40px;
+        text-align: justify;
+    }
+
+} 
