@@ -7,7 +7,9 @@
     --title-color: rgb(236, 232, 168); 
     --maintext: 'Playfair Display', serif;
     --titletext:'Amatic SC', cursive;
+    --blog-text: rgb(42, 43, 124);
 }
+
 * {
     box-sizing: border-box;
 
@@ -27,8 +29,14 @@ body {
     font-family: var(--titletext);
     color: rgb(236, 232, 168);
     height: 80vh;
-    background: url(/images/Optimized-moontin2.jpg);
+    background: url(/src/images/Optimized-moontin2.jpg);
     background-size: cover;
+}
+
+ .container {
+    background-color: var(--back);
+    position: relative;
+    min-height: 100vh;
 }
 
 h2 {
@@ -48,7 +56,7 @@ h2 {
     display: flex;
 }
 
-.giblets ul {
+ul {
     display: flex;
     flex-wrap: wrap;
     font-size: 13px;
@@ -63,16 +71,17 @@ h2 {
     
 }
 
-.giblets ul li a {
+ul li a {
     text-decoration: none;
     color: var(--nav-colour);
 }
 
-.giblets ul li a:visited {
+
+ul li a:visited {
     color: var(--nav-visit)
 }
 
-.giblets ul li a:hover {
+ul li a:hover {
     color: var(--nav-hover);
 }
 
@@ -176,6 +185,39 @@ footer {
     font-family: var(--titletext);
 }
 
+#blog-h {
+    font-family: var(--titletext);
+    color: rgb(119, 41, 192);
+    text-align: center;
+
+}
+
+.blog-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.blog-nav ul li {
+    padding: 20px 0;
+    margin: 10px 0;
+    border: 2px solid rgb(82, 81, 81);
+    background: rgb(180, 157, 157);
+}
+
+.blog-nav ul img {
+    width: 98.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-nav ul li h3 {
+    padding: 0 20px 5px 5px;
+    color: rgb(42, 43, 124);
+
+}
+
+
+
 @media (min-width: 500px) and (max-width: 750px) {
 
     .giblets ul {
@@ -219,6 +261,26 @@ footer {
         width: 500px;
         height: auto;
     }
+
+    .blog-nav ul {
+        display: flex;
+        justify-content: space-around;       
+    }
+
+    .blog-nav ul li {
+        width: 48vw;  
+    } 
+
+    .blog-nav ul li a h3 {
+        min-height: 30%;
+    }
+
+    .blog-nav ul li a img {
+        display: flex;
+        width: 33vw;
+        max-height: 60%;
+        margin: auto;
+    }  
 }
 
 @media only screen and (min-width: 750px) {
@@ -247,11 +309,6 @@ footer {
         font-weight: normal;
         margin-top: 15px;
     }
-
-    /* h2 {
-        color: var(--title-color);
-        font-family: var(--titletext);
-    } */
 
     #linkd, #github {
         height: 2rem;
@@ -366,5 +423,20 @@ footer {
         display: flex;
         width: 450px;
         text-align: center;
+    }
+
+    .blog-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .blog-nav ul li {
+        width: 350px;
+    }
+
+    .blog-nav ul img {
+        display: flex;
+        width: 300px;
+        margin: auto;
     }
 }
