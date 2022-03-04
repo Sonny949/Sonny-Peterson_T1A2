@@ -1,6 +1,6 @@
 :root {
     --nav-colour: aquamarine;
-    --p-colour: rgb(194, 59, 10);
+    --p-colour: rgb(165, 52, 11);
     --nav-visit: rgb(64, 202, 133);
     --nav-hover: rgb(245, 199, 130);
     --back: gray;
@@ -31,6 +31,11 @@ body {
     background-size: cover;
 }
 
+h2 {
+    color: var(--title-color);
+    font-family: var(--titletext);
+    text-align:center; 
+}
 
 #media {
     padding: 0.2rem;
@@ -66,7 +71,6 @@ body {
 .giblets ul li a:visited {
     color: var(--nav-visit)
 }
-
 
 .giblets ul li a:hover {
     color: var(--nav-hover);
@@ -201,6 +205,12 @@ footer {
         padding-top: 20px;
     }
 
+    /* .context em {
+        display: flex;
+        flex-wrap: wrap;
+        color: rgb(12, 12, 214);
+    } */
+
     .context p {
         display: flex;
         flex-wrap: wrap;
@@ -245,6 +255,11 @@ footer {
         font-weight: normal;
         margin-top: 15px;
     }
+
+    /* h2 {
+        color: var(--title-color);
+        font-family: var(--titletext);
+    } */
 
     #linkd, #github {
         height: 2rem;
@@ -343,13 +358,18 @@ footer {
     #about-img figure figcaption {
         display: flex;
         justify-self: flex-start;
-        align-self: justify;
         width: 260px;
     }
 
-    #cap {
-        width: 260px;
-        justify-content: center;
-        
+    #bjj img {
+        display: flex;
+        width: 500px;
     }
+
+    #bjj figure figcaption {
+        display: flex;
+        width: 450px;
+        text-align: center;
+    }
+
 }
