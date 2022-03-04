@@ -161,12 +161,15 @@ footer {
 }
 
 .context p {
-    display: flex;
-    flex-wrap: wrap;
     font-family: var(--maintext);
     color: var(--p-colour);
     font-size: 1.2rem;
 }
+
+.context em { 
+    color: rgb(12, 12, 214);
+}
+
 
 #cap {
     color: var(--title-color);
@@ -203,17 +206,6 @@ footer {
         width: 500px;
         height: 300px;
         padding-top: 20px;
-    }
-
-    /* .context em {
-        display: flex;
-        flex-wrap: wrap;
-        color: rgb(12, 12, 214);
-    } */
-
-    .context p {
-        display: flex;
-        flex-wrap: wrap;
     }
 
     #about-img img {
@@ -333,6 +325,10 @@ footer {
         height: 199px;
     }
 
+    .contact h2 {
+        width: 280px;
+    }
+
     #about-img {
         display: flex;
         flex-wrap: wrap;
@@ -371,5 +367,4 @@ footer {
         width: 450px;
         text-align: center;
     }
-
 }
