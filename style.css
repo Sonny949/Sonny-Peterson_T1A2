@@ -29,7 +29,7 @@ body {
     font-family: var(--titletext);
     color: rgb(236, 232, 168);
     height: 80vh;
-    background: url(/src/images/Optimized-moontin2.jpg);
+    background: url(/images/Optimized-moontin2.jpg);
     background-size: cover;
 }
 
