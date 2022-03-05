@@ -215,6 +215,13 @@ footer {
     color: rgb(42, 43, 124);
 }
 
+.blog-nav ul li h6 {
+    display: flex;
+    color: rgb(42, 43, 124);
+    margin: auto;
+    padding:10px;
+}
+
 #workh {
     font-family: var(--titletext);
     color:rgb(46, 22, 90);
@@ -484,6 +491,16 @@ footer {
     .blog-nav ul img {
         display: flex;
         width: 300px;
+        margin: auto;
+    }
+
+    .blog-nav ul li a h3 {
+        min-height: 25%;
+    }
+
+    .blog-nav ul li a img {
+        display: flex;
+        max-height: 60%;
         margin: auto;
     }
 
