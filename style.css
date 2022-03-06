@@ -1,7 +1,7 @@
 :root {
     --nav-colour: aquamarine;
     --p-colour: rgb(165, 52, 11);
-    --nav-visit: rgb(64, 202, 133);
+    --nav-visit: rgb(64, 202, 133);         /*I don't know if I'll use many things more than once but just in case*/
     --nav-hover: rgb(245, 199, 130);
     --back: gray;
     --title-color: rgb(236, 232, 168); 
@@ -11,20 +11,20 @@
 }
 
 * {
-    box-sizing: border-box;
-
+    box-sizing: border-box; /*Makes it easier to fit things around each other*/
 }
+
 body {
-    margin: 0;
+    margin: 0; /*to keep look sleek and keep the gray background uniform*/
 }
 
 .title {
-    display: flex;
-    flex: 1;
+    display: flex; /*Flex for column display*/
+    flex: 1; /*these make div grow and shrink in proportion with window*/
     flex-shrink: 1;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* keeps the nice centered aesthetic*/
     align-items: center;
     font-family: var(--titletext);
     color: rgb(236, 232, 168);
@@ -35,7 +35,7 @@ body {
 
  .container {
     background-color: var(--back);
-    position: relative;
+    position: relative;/*keep relative to normal position*/
     min-height: 100vh;
 }
 
@@ -46,28 +46,28 @@ h2 {
 }
 
 #media {
-    padding: 0.2rem;
+    padding: 0.2rem;/*keep a nice distance*/
     height: 20px;
-    margin: 0%;    
+    margin: 0%; /*seamless*/   
 }
 
 .giblets {
     background-color: var(--back);
-    display: flex;
+    display: flex; /*make the top container shrink with screen */ 
 }
 
 ul {
     display: flex;
-    flex-wrap: wrap;
-    font-size: 13px;
-    list-style: none;
+    flex-wrap: wrap;/*needed the wrap at lower viewports*/
+    font-size: 13px; /*perfect, don't mess with this */
+    list-style: none; /*aesthetics*/
     font-family: var(--maintext);
     font-size: 1.2rem;
     padding-left: 0%;
 }
 
 .giblets ul li {
-    padding: 0 1rem;
+    padding: 0 1rem; /*only want side to keep as sleek as possible without running into each other*/
     
 }
 
@@ -82,13 +82,13 @@ ul li a:visited {
 }
 
 ul li a:hover {
-    color: var(--nav-hover);
+    color: var(--nav-hover);/*may change later */
 }
 
 .pic-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column; /*only way it will work*/
+    justify-content: flex-start; /*these actually worked, don't mess with it */
     align-items: flex-start;
     background-color: var(--back);
     margin: 0;
@@ -96,28 +96,27 @@ ul li a:hover {
 }
 
 .pic-menu img {
-    width: 99.7vw;
+    width: 99.7vw; /*no side scroll */
     margin: 0;
     padding: 0;
 }
 
 figure {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*will be changing back at larger viewport*/
     margin: 0;
-    padding-bottom: auto;
 }
 
 #linkd, #github {
     height: 2.5rem;
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply; /*makes the background of image fit with doc background. handy*/
     padding: 5px;
 }
 
 .icons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;/*will change back at larger viewport*/
+    justify-content: center; /*remember: does align job w/column*/
 }
 
 #about p {
@@ -129,14 +128,14 @@ figure {
 }
 
 h5 {
-    display: none;
+    display: none;/*only want on large screen*/
     color: var(--nav-colour);
     font-family: var(--maintext);
     padding-left: 10px;
 }
 
 figcaption {
-    font-size: medium;
+    font-size: medium;/*will make smaller on large screen for sleek design */
     text-align: center;
     font-family: var(--titletext);
     color: var(--title-color);
@@ -144,7 +143,7 @@ figcaption {
 
 footer {
     background-color: var(--back);
-    font-size: x-small;
+    font-size: x-small; /*set and forget*/
     color: var(--nav-colour);
     font-family: var(--maintext);
    
@@ -152,21 +151,21 @@ footer {
 
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*text under image*/
     background-color: var(--back);
-    min-height: 100vh;
+    min-height: 100vh;  /*stop the white creeping in*/
 }
 
 .contact img {
     display: flex;
-    width: 100%;
+    width: 100%; /* full width img, will change at larger viewports*/
     height: auto;
 }
 
 .context h1 {
     font-family: var(--titletext);
     color: rgb(216, 2, 187);
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* xl baby*/
 }
 
 .context p {
@@ -188,13 +187,13 @@ footer {
 #blog-h {
     font-family: var(--titletext);
     color: rgb(119, 41, 192);
-    text-align: center;
+    text-align: center; /*will style both. changing back at larger viewport*/
 
 }
 
 .blog-nav ul{
     margin: 0;
-    padding: 0;
+    padding: 0;/*this whole blog area was super tricky. eventually settled everything down over all three viewports with max and min height on two different elements*/
 }
 
 .blog-nav ul li {
@@ -205,7 +204,7 @@ footer {
 }
 
 .blog-nav ul img {
-    width: 98.5vw;
+    width: 98.5vw; /* no side scroll*/
     padding: 0;
     margin: 0;
 }
@@ -216,10 +215,10 @@ footer {
 }
 
 .blog-nav ul li h6 {
-    display: flex;
+    display: flex; /*nearly broke the camel's back. leave it on the bottom*/
     color: rgb(42, 43, 124);
     margin: auto;
-    padding:10px;
+    padding: 10px;
 }
 
 #workh {
@@ -230,7 +229,7 @@ footer {
 
 #works img {
     display: flex;
-    width: 95vw;
+    width: 95vw; /*no scroll*/
     height: auto;
     margin: auto;
 }
@@ -238,7 +237,7 @@ footer {
 .workp p {
     font-family: var(--maintext);
     color: rgb(122, 10, 16);
-    margin-left: 5px;
+    margin-left: 5px;/*keep off img*/
 }
 
 .workp a {
@@ -258,28 +257,28 @@ footer {
 #bottom figure a img {
     display: flex;
     width: 95vw;
-    max-width: 350px;
+    max-width: 350px; /*was tricky to style. this is the sweet spot. may re-think later */
     margin: auto;
 }
 
-@media (min-width: 500px) and (max-width: 750px) {
+@media (min-width: 500px) and (max-width: 750px) {  /*tableta */
 
     .giblets ul {
-        margin-left: auto; 
-        align-items: center;  
+        margin-left: auto; /*Thanks, Matt*/
+        align-items: center;  /*middle of top*/
     }
 
     .pic-menu {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /*chnages back responsively*/
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: center; /*keeps looking nice*/
         align-items: center;
     }
 
      .pic-menu img { 
         display: flex;
-        width: 48vw;
+        width: 48vw; /*sweet spot for twp*/
 
     } 
 
@@ -295,7 +294,7 @@ footer {
     }
 
     #about-img img {
-        width: 300px;
+        width: 300px; /*images smaller and centered at this width*/
         height: auto;
         justify-self: center;
         align-self: center;
@@ -303,20 +302,20 @@ footer {
 
     #fam img {
         width: 500px;
-        height: auto;
+        height: auto; /*had to style by self as size is different*/
     }
 
     .blog-nav ul {
         display: flex;
-        justify-content: space-around;       
+        justify-content: space-around; /*again this one tricky*/    
     }
 
     .blog-nav ul li {
-        width: 48vw;  
+        width: 48vw;  /*sweet spot*/
     } 
 
     .blog-nav ul li a h3 {
-        min-height: 30%;
+        min-height: 30%; /*this was tough to figure out*/
     }
 
     .blog-nav ul li a img {
@@ -332,7 +331,7 @@ footer {
     }
 
     #bottom figure a img {
-        width: 300px;
+        width: 300px; /*bigger at this port than any other.*/
         height: auto;
     }
 }
@@ -340,13 +339,13 @@ footer {
 @media only screen and (min-width: 750px) {
 
     body {
-        height: 100vh;
+        height: 100vh; /*keeps white out, fits view better*/
     }
 
     .container {
         background-color: var(--back);
         position: relative;
-        min-height: 100vh;
+        min-height: 100vh; /*back to the start*/
     }
 
     .giblets ul {
