@@ -20,40 +20,37 @@ body {
 
 .title {
     display: flex; /*Flex for column display*/
-    flex: 1; /*these make div grow and shrink in proportion with window*/
-    flex-shrink: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: wrap; /*keeps the text in the banner at slimmer vh*/
+    flex-direction: column;  /*everything on it's own line*/
     justify-content: center; /* keeps the nice centered aesthetic*/
     align-items: center;
     font-family: var(--titletext);
     color: rgb(236, 232, 168);
     height: 80vh;
     background: url(/images/Optimized-moontin2.jpg);
-    background-size: cover;
+    background-size: cover; /*thanks Matt! generic cover on this looks the best*/
 }
 
  .container {
     background-color: var(--back);
-    position: relative;/*keep relative to normal position*/
-    min-height: 100vh;
+    min-height: 100vh;/*keeps the grey aesthetic at larger vp with little content*/
 }
 
 h2 {
     color: var(--title-color);
     font-family: var(--titletext);
-    text-align:center; 
+    text-align: center; /*easiest way to get it where i want it for projects */
 }
 
 #media {
     padding: 0.2rem;/*keep a nice distance*/
     height: 20px;
-    margin: 0%; /*seamless*/   
+    margin: 0%; /*seamless transition*/   
 }
 
 .giblets {
     background-color: var(--back);
-    display: flex; /*make the top container shrink with screen */ 
+    display: flex; /*make the top container shrink with screen*/ 
 }
 
 ul {
@@ -72,7 +69,7 @@ ul {
 }
 
 ul li a {
-    text-decoration: none;
+    text-decoration: none; /*no line*/
     color: var(--nav-colour);
 }
 
@@ -96,7 +93,7 @@ ul li a:hover {
 }
 
 .pic-menu img {
-    width: 99.7vw; /*no side scroll */
+    width: 99.7vw; /*no side scroll fits whole page. nice */
     margin: 0;
     padding: 0;
 }
@@ -120,11 +117,11 @@ figure {
 }
 
 #about p {
-    color:rgb(187, 207, 3);
+    color:rgb(187, 207, 3); /*bra*/
 }
 
 #about h1 {
-    color:rgb(57, 168, 67)
+    color:rgb(57, 168, 67) /*zil! or boxing kangaroo. whatever you prefer*/
 }
 
 h5 {
@@ -136,7 +133,7 @@ h5 {
 
 figcaption {
     font-size: medium;/*will make smaller on large screen for sleek design */
-    text-align: center;
+    text-align: center; 
     font-family: var(--titletext);
     color: var(--title-color);
 }
@@ -157,7 +154,6 @@ footer {
 }
 
 .contact img {
-    display: flex;
     width: 100%; /* full width img, will change at larger viewports*/
     height: auto;
 }
@@ -169,6 +165,7 @@ footer {
 }
 
 .context p {
+    padding: 5px; /*just off the edges*/
     font-family: var(--maintext);
     color: var(--p-colour);
     font-size: 1.2rem;
@@ -192,32 +189,32 @@ footer {
 }
 
 .blog-nav ul{
-    margin: 0;
+    margin: 0; /*stops it from breaking the container*/
     padding: 0;/*this whole blog area was super tricky. eventually settled everything down over all three viewports with max and min height on two different elements*/
 }
 
 .blog-nav ul li {
-    padding: 20px 0;
+    padding: 20px 0; /*padding and margin above and below and flex between*/
     margin: 10px 0;
     border: 2px solid rgb(82, 81, 81);
     background: rgb(180, 157, 157);
 }
 
 .blog-nav ul img {
-    width: 98.5vw; /* no side scroll*/
+    width: 100%; /* no side scroll*/
     padding: 0;
     margin: 0;
 }
 
 .blog-nav ul li h3 {
-    padding: 0 20px 5px 5px;
+    padding: 0 20px 5px 5px; /*keeps it in a good spot*/
     color: rgb(42, 43, 124);
 }
 
 .blog-nav ul li h6 {
-    display: flex; /*nearly broke the camel's back. leave it on the bottom*/
-    color: rgb(42, 43, 124);
-    margin: auto;
+    display: flex;
+    color: rgb(42, 43, 124); /*I'm using a lot of font colors by this point but i like it to break the pages away from each other while still having the uniform fonts and backgrounds and styles*/
+    margin: auto; /*really handy for text*/
     padding: 10px;
 }
 
@@ -228,10 +225,7 @@ footer {
 }
 
 #works img {
-    display: flex;
     width: 95vw; /*no scroll*/
-    height: auto;
-    margin: auto;
 }
 
 .workp p {
@@ -283,12 +277,11 @@ footer {
     } 
 
     .contact {
-        min-height: 100vh;
+        min-height: 100vh;/*keep the white out*/
     }
 
     .contact img {
-        display: flex;
-        width: 500px;
+        width: 500px; /*biggest at this vp. i feel it looks better on*/
         height: 300px;
         padding-top: 20px;
     }
@@ -298,11 +291,6 @@ footer {
         height: auto;
         justify-self: center;
         align-self: center;
-    }
-
-    #fam img {
-        width: 500px;
-        height: auto; /*had to style by self as size is different*/
     }
 
     .blog-nav ul {
@@ -315,7 +303,7 @@ footer {
     } 
 
     .blog-nav ul li a h3 {
-        min-height: 30%; /*this was tough to figure out*/
+        min-height: 30%; /*blog-nav was tough to figure out ended up making the image and text have a more defined space in their container by using the min and max height. worked nicely*/
     }
 
     .blog-nav ul li a img {
@@ -345,17 +333,17 @@ footer {
     .container {
         background-color: var(--back);
         position: relative;
-        min-height: 100vh; /*back to the start*/
+        min-height: 100vh; /*keeps the site uniform*/
     }
 
     .giblets ul {
-        margin-left: auto; 
+        margin-left: auto; /*thanks Matt! all of these make the nav look nice at a larger viewport*/
         font-size: small;
         align-items: center;     
     }
 
     h5 {
-        display: flex;
+        display: flex; /*these styles bring the social heading back into the mix and fixes the position*/
         float: left;
         align-self: center;
         justify-self: center;
@@ -364,11 +352,11 @@ footer {
     }
 
     #linkd, #github {
-        height: 2rem;
+        height: 2rem; /*good size i think for the social icons*/
     }
 
     #linkd {
-        padding: 0 25px;   
+        padding: 0 25px;   /*gives them some space*/
         
     }
     
@@ -379,122 +367,83 @@ footer {
 
     .icons{
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /* all positioning the icons nicely*/
         align-items: center;
     }
 
     .title {
-        height: 60vh;
-        display: flex;
+        height: 60vh; /*wide but leaves room for pic menu*/
         font-size: 1.2rem;
-        font-weight: bolder;
+        font-weight: bolder; /*the font stylings really make it work*/
     }
 
     .pic-menu {
-        display: flex;
-        flex-direction: row;
+        flex-direction: row; /*back to row, spaced evenly, centred vertically, and wraps. chose to use padding up from the bottom. looks schmick */
         justify-content: space-evenly;
-        align-items: center;
-        height: auto;
+        align-items: center;      
         flex-wrap: wrap;
         padding-bottom: 2.5rem;
     }
 
     .pic-menu img {
-        width: 170px;
+        width: 170px; /*perfect fit for full screen under the banner*/
     }
     
     figure {
-        padding-top: 30px;
+        padding-top: 30px; /*some distance between*/
     }
 
     figcaption {
         font-size: 1.1rem;
         font-family: var(--titletext);
     }
-    
-    #footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;          
-    }
 
     .contact {
-        display: flex;
-        flex-direction: row;
-        background-color: var(--back);
+        flex-direction: row; /*back to row for larger vp*/
         padding: 20px;
-        min-height: 100vh;
+        min-height: 100vh;/*keeps the nasties out and shows full screen*/
     }
 
     .contact img {
-        padding-right: 40px;
-        display: flex;
+        padding-right: 40px; /*pretty self explanatory styling. gets it where i want it*/
+        padding-top: 30px;
         width: 300px;
         height: 199px;
     }
 
-    .contact h2 {
-        width: 280px;
-    }
-
-    #about-img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
-    }
-
     #about-img img {
-        width: 300px;
+        width: 300px; /*nice size for a side bar set up like we have*/
         height: auto;
-    }
-
-    #fam img {
-        width: 500px;
-        height: auto;
-    }
-
-    #cap {
-        display: flex;
-        text-align: justify;
-        width: 500px;
     }
 
     #about-img figure figcaption {
-        display: flex;
-        justify-self: flex-start;
-        width: 260px;
+        width: 260px;/*keeps them all in line*/ 
     }
 
     #bjj img {
-        display: flex;
-        width: 500px;
+        width: 500px; /*this one was special. wanted it larger*/
     }
 
     #bjj figure figcaption {
-        display: flex;
-        width: 450px;
+        width: 450px; /* larger text for the larger pic*/
         text-align: center;
     }
 
     .blog-nav ul {
-        display: flex;
-        justify-content: space-around;
+        justify-content: space-around; /*keeps items spaced nicely*/
     }
 
     .blog-nav ul li {
-        width: 350px;
+        width: 350px; /*keeps everything to a nice size*/
     }
 
     .blog-nav ul img {
-        display: flex;
-        width: 300px;
+        width: 300px; /*these keep the image to the right size and ccentered */
         margin: auto;
     }
 
     .blog-nav ul li a h3 {
-        min-height: 25%;
+        min-height: 25%; /*these next four cmds keep the image and the text within the box how i like them*/
     }
 
     .blog-nav ul li a img {
@@ -504,7 +453,7 @@ footer {
     }
 
     #works img {
-        float: left;
+        float: left; /*keeps the image left so that I can justify the text around it. small margin to keep it off the side and sizing*/
         width: 500px;
         height: auto;
         margin: 10px        
@@ -512,7 +461,7 @@ footer {
 
     .workp p {
         padding: 0 40px;
-        text-align: justify;
+        text-align: justify; /*wrap the text around the image as it flexes*/
     }
 
 } 
