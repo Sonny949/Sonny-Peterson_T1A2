@@ -447,7 +447,7 @@ footer {
     }
 
     .blog-nav ul li a img {
-        display: flex;
+        display: flex; /* this keeps it where it should be in the lis*/
         max-height: 60%;
         margin: auto;
     }

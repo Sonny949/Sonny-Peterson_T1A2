@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;/*easier to manipulate boxes based on their content*/
     background: rgb(39, 37, 37);
 }
 
@@ -10,32 +10,32 @@ h1, h5 {
 }
 
 body{
-    margin: 0;
+    margin: 0; /*keeps the styling clean*/
 }
 
 p {
     font-family: 'McLaren', cursive;
-    margin-left: 5px;
+    margin-left: 5px;/*just get it off the edge*/
     color: antiquewhite;
 }
 
 img {
     display: flex;
-    width: 95vw;
+    width: 95vw;/*keeps it large*/
     height: auto;
     margin: auto;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 750px) {
     img {
-        width: 300px;
+        width: 300px; /*images smaller at this viewpoint for better effect on tablet*/
         height: auto;
     }
 }
 
 @media only screen and (min-width: 750px) {
     img {
-        float: left;
+        float: left;/*float image left to and large to keep the text comfortable for reading*/
         width: 500px;
         height: auto;
         margin: 10px        
@@ -43,6 +43,6 @@ img {
 
     p {
         padding: 0 40px;
-        text-align: justify;
+        text-align: justify;/*wrap the text around the image on flex*/
     }
 }
